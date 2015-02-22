@@ -1,0 +1,6 @@
+development:
+    environment: development
+    SOUNDCLOUD_CLIENT_ID: 'f9f79bddf66feb530b38223042012e77'
+    SOUNDCLOUD_CLIENT_SECRET: 'cc290866a7d54699dcc9a3d7dddc4879'
+    SOUNDCLOUD_REDIRECT_URL: 'http://localhost:3000/soundcloud/connected'
+all: 
