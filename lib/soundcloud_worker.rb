@@ -2,7 +2,8 @@ class SoundcloudWorker
     include Sidekiq::Worker
 
     PAGE_SIZE = 200
-    SONG_DIR = '~/Downloads/songs'
+    # SONG_DIR = '~/Downloads/songs'
+    SONG_DIR = '~/Music/iTunes/iTunes\ Media/Automatically*'
 
 
     def self.update_all_favorites

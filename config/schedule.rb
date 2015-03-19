@@ -20,5 +20,6 @@
 # Learn more: http://github.com/javan/whenever
 
 every 1.hour do
-  runner SoundcloudWorker.update_all_favorites
+  # runner SoundcloudWorker.update_all_favorites
+  runner SoundcloudWorker.update_favorites(1)
 end

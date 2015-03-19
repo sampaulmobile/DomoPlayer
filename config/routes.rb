@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   mount Sidekiq::Web => '/sidekiq'
 
 
+  root 'soundcloud#connect'
+
   get 'soundcloud/connect'
   get 'soundcloud/connected'
 
