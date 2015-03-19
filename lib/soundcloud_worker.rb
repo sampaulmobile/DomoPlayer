@@ -43,8 +43,8 @@ class SoundcloudWorker
         # `mkdir -p songs/#{user.soundcloud_username}`
 
         filename = title.gsub(/[\x00\/\\:\*\?\"<>\|]/, '_')
-        mkdir_cmd = "mkdir -p #{SONG_DIR}"
-        `#{mkdir_cmd}`
+        # mkdir_cmd = "mkdir -p #{SONG_DIR}"
+        # `#{mkdir_cmd}`
 
         file_path = "#{SONG_DIR}/'#{filename}.mp3'"
         cmd = "curl #{url} -L > #{file_path}"
