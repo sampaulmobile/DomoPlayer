@@ -3,8 +3,7 @@ class SoundcloudWorker
 
     PAGE_SIZE = 200
     # SONG_DIR = '~/Downloads/songs'
-    SONG_DIR = "~/Music/iTunes/'iTunes Media'/Automatically*"
-
+    SONG_DIR = "~/Music/iTunes/'iTunes Media'/'Automatically Add to iTunes.localized'"
 
     def self.update_all_favorites
         users = User.order('favorites_updated_at DESC').first(10)
